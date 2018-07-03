@@ -15,7 +15,7 @@ class EmailParser
   
   
   def parse
-    @@all << email.split(/[\s,]/).reject {|i| i.empty?} unless
+    @@all << email.split(/[\s,]/).reject {|i| i.empty?} unless @@all.include? email 
     
     end
     
