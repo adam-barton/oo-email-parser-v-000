@@ -16,7 +16,7 @@ class EmailParser
   
   def parse
     email.split(/[\s,]/).reject {|i| i.empty?} 
-    #unless @@all.include? email 
+    email.uniq
     
     end
     
