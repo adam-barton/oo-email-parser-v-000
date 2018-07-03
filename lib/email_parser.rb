@@ -15,7 +15,8 @@ class EmailParser
   
   
   def parse
-    email.split(/[\s,]/)
+    email.split(/[\s,]/).reject {|i| 
+    #email_list = 
     end
     
 
